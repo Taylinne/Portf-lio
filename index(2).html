@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            margin: 20px;
+        }
+        h1 {
+            color: rgb(2, 64, 114);
+            text-align: center;
+        }
+        h2 {
+            color: rgb(40, 190, 153);
+        }
+        .conteudo {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <h1>Taylinne Pereira</h1>
+            <p>Aluna do curso de Tecnologia em Sistemas para Internet - TSI</p>
+            <nav>
+                <ul>
+                    <li><a href="#perfil">Perfil</a></li>
+                    <li><a href="#horarios">Grade Horária</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="perfil">
+                <h2>Perfil</h2>
+                <img <img src="imagens/perfil.jpg" alt="Foto de perfil de Taylinne" width="150">
+                <p>Meu nome é <strong>Taylinne Pereira</strong> e sou aluna do curso de TSI.</p>
+                <p>Tenho interesse em criação de sites, front-end, programação web, mundo da tecnologia. Ainda estou aprendendo, mas procuro <em>melhorar a cada atividade</em>.</p>
+                <p> No meu tempo livre, gosto de assistir a filmes e séries, conhecer novas ferramentas digitais e cozinhar. Essas atividades me ajudam a descansar e manter o <br>
+                equilíbrio entre os estudos e a vida pessoal.</p>
+                <p>Meu objetivo é <em>continuar aprendendo e melhorar a cada atividade</em>, concluir minha formação e adquirir experiência na área. Futuramente, pretendo trabalhar <br> 
+                com tecnologia, participar de projetos e contribuir para a criação de sites e sistemas úteis para as pessoas.</p>
+            </section>
+
+            <section id="horarios">
+                <h2>Grade Horária</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                            <th>Disciplina</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda-feira</td>
+                            <td>19h às 21h</td>
+                            <td>Programação Web - Front-end</td>
+                        </tr>
+                        <tr>
+                            <td>Terça-feira</td>
+                            <td>19h às 21h</td>
+                            <td>Metodologia científica</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-feira</td>
+                            <td>19h às 21h</td>
+                            <td>Redes de computadores</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Grade do semestre atual</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <form>
+                    <fieldset>
+                        <legend>Envie uma mensagem</legend>
+
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" minlength="3" maxlength="50" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" maxlength="80" required>
+
+                        <label for="motivo">Motivo do contato:</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">Escolha uma opção</option>
+                            <option value="trabalho">Trabalho</option>
+                            <option value="duvida">Dúvida acadêmica</option>
+                            <option value="sugestao">Sugestão</option>
+                        </select>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" minlength="10" maxlength="300" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Taylinne Pereira</p>
+            <p>E-mail: taylinne20250013775@alu.uern.br</p>
+            <p>
+                <a href="https://github.com/Taylinne" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/taylinne-pereira-035a88165/" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+    </body>
+</html>
